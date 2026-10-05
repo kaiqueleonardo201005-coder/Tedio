@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="terminal">
+    <div class="titulo">PASSWORD LAB V2</div>
+
+    <div class="linha"></div>
+
+    <div class="status">
+        STATUS: <span id="status">CONECTANDO...</span>
+    </div>
+
+    <div class="linha"></div>
+
+    <label>Senha de teste:</label>
+
+    <input
+        type="password"
+        id="senha"
+        maxlength="6"
+        placeholder="Digite a senha"
+    >
+
+    <div class="senha-mascarada">
+        TESTE: <span id="mascara">******</span>
+    </div>
+
+    <button onclick="salvarSenha()">[ SALVAR SENHA ]</button>
+
+    <div id="mensagem">Aguardando senha...</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
